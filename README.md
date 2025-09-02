@@ -114,9 +114,7 @@ python calcu.py
 
 ---
 
-## 📸 Screenshot
 
-![RTXCALC Screenshot](screenshot.png)
 
 ---
 
