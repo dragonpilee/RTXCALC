@@ -1,78 +1,137 @@
-# RTXCALC 🚀
+# ⚡ RTXCALC - GPU-Accelerated Calculator v1.0
 
-**RTXCALC** is a modern GPU-accelerated calculator built with **Python**, **CuPy**, and **PyQt5**.  
-- 🧮 **Math** runs on your NVIDIA RTX GPU via **CUDA**.  
-- 🖥️ **GUI** is fully hardware-accelerated using **OpenGL**.  
-- ✨ Clean neon UI, responsive layout, and full keyboard support.  
+![RTXCALC Banner](https://img.shields.io/badge/RTXCALC-v1.0-magenta?style=flat-square)
+![Engine](https://img.shields.io/badge/Engine-CuPy%2FPyQt5-blue?style=flat-square)
+![Creator](https://img.shields.io/badge/Creator-Alan%20Cyril%20Sunny-green?style=flat-square)
+![Python](https://img.shields.io/badge/Language-Python%203.10+-blue)
+![GUI](https://img.shields.io/badge/UI-PyQt5%20%2B%20OpenGL-purple)
+![MIT License](https://img.shields.io/badge/License-MIT-blue)
+
+> **Developed by ALAN CYRIL SUNNY**  
+> If you like this project, please ⭐ [star the repository](https://github.com/dragonpilee/rtxcalc)!
+
+---
+
+## 🧠 RTXCALC - GPU-Accelerated Calculator
+
+A modern, lightning-fast calculator app that runs all math on your NVIDIA RTX GPU using **CuPy** and features a beautiful, hardware-accelerated **PyQt5** GUI.
+
+- ⚡ **CUDA math acceleration** — all calculations run on your RTX GPU  
+- 🖥️ **OpenGL-accelerated GUI** — smooth, responsive interface  
+- 🎨 Futuristic neon theme and clean layout  
+- ⌨️ Full keyboard support for fast input  
+- 🏷️ Displays your GPU model at the top
 
 ---
 
 ## ✨ Features
-- ✅ **CUDA math acceleration** with CuPy (runs on RTX GPU cores).  
-- ✅ **OpenGL-accelerated GUI** (smooth rendering on GPU pipeline).  
-- ✅ Supports **multi-operation expressions** (e.g., `3+5*2-4/2`).  
-- ✅ **Keyboard input**:  
-  - Numbers/operators directly from keyboard.  
-  - `Enter` = evaluate.  
-  - `Backspace` = delete last char.  
-  - `ESC` = clear display.  
-- ✅ Futuristic **RTX neon theme**.  
+
+- **GPU Math**: All calculations use CuPy and run on CUDA cores.
+- **OpenGL GUI**: Hardware-accelerated rendering via Qt.
+- **Multi-operation Expressions**: Supports complex math like `3+5*2-4/2`.
+- **Keyboard Input**:  
+  - Type numbers/operators directly  
+  - `Enter` = evaluate  
+  - `Backspace` = delete last character  
+  - `ESC` = clear display
+- **Neon RTX Theme**: Modern, glowing UI.
+- **GPU Info**: Shows your NVIDIA GPU name in the header.
 
 ---
 
-## 🛠️ Requirements
-- Python **3.10** (recommended)  
-- NVIDIA GPU with CUDA support (tested on RTX 2050)  
-- Conda (preferred for environment management)  
+## 🛠️ Tech Stack
+
+- **Language**: Python 3.10+
+- **GPU Math**: [CuPy](https://cupy.dev/) (CUDA backend)
+- **GUI**: [PyQt5](https://riverbankcomputing.com/software/pyqt/) + OpenGL (QSurfaceFormat)
+- **Platform**: Windows, Linux (with CUDA GPU)
 
 ---
 
-## 📦 Setup
+## 💻 Requirements
+
+- Python 3.10 (recommended)
+- NVIDIA GPU with CUDA support (tested on RTX 2050)
+- Conda or Mamba for environment management
+
+---
+
+## 📦 Installation
 
 ### 1. Create Environment
+
 ```powershell
 mamba create -n calculator -c conda-forge python=3.10 pyqt cupy numpy -y
 conda activate calculator
 ```
 
-### 2. Install dependencies
+### 2. Install Dependencies
+
 ```powershell
 pip install pyqt5
 ```
 
 ---
 
-## ▶️ Run RTXCALC
+## 🚀 Quick Start
+
+Launch RTXCALC from your terminal:
+
 ```powershell
 python calcu.py
 ```
 
 ---
 
-## 🎮 Usage
-- Type `3+5*2-4/2` → Press **Enter** → Output: `11.0  [GPU]`  
-- Click buttons or type on your keyboard.  
-- **GPU info** (e.g., `NVIDIA GeForce RTX 2050`) is displayed at the top.  
+## 📝 Usage
+
+- Type math expressions (e.g., `3+5*2-4/2`) and press **Enter**  
+- Click buttons or use your keyboard  
+- See your GPU info (e.g., `NVIDIA GeForce RTX 2050`) at the top  
+- Output is labeled `[GPU]` to confirm CUDA execution
 
 ---
 
-## ⚡ Tech Stack
-- **[CuPy](https://cupy.dev/)** → GPU math (CUDA backend).  
-- **[PyQt5](https://riverbankcomputing.com/software/pyqt/)** → GUI framework.  
-- **OpenGL (via Qt QSurfaceFormat)** → Hardware-accelerated rendering.  
+## ⚙️ Options & Controls
+
+| Action         | Description                      |
+|----------------|----------------------------------|
+| Type numbers   | Input digits/operators           |
+| Enter/Return   | Evaluate expression (on GPU)     |
+| Backspace      | Delete last character            |
+| ESC            | Clear display                    |
+| Mouse Click    | Use on-screen buttons            |
+
+---
+
+## 📁 Project Structure
+
+```
+📦 RTXCALC/
+ ┣ calcu.py                  # Main calculator script
+ ┗ README.md                 # Project README
+```
 
 ---
 
 ## 📸 Screenshot
+
 ![RTXCALC Screenshot](screenshot.png)
 
 ---
 
 ## 🚀 Future Work
-- Add **scientific mode** (`sin`, `cos`, `sqrt`, `log`) with CuPy.  
-- Add **history panel** with GPU-accelerated logs.  
-- Optional **CUDA-OpenGL interop** for direct GPU buffer rendering.  
+
+- Scientific mode (`sin`, `cos`, `sqrt`, `log`) with CuPy
+- History panel with GPU-accelerated logs
+- CUDA-OpenGL interop for direct GPU buffer rendering
 
 ---
 
-💚 Built for **RTX GPUs** — enjoy lightning-fast math with a smooth GPU-accelerated interface.  
+## 📝 License
+
+MIT License — free to use, modify, and share. Attribution appreciated.
+
+---
+
+💚 Built for **RTX GPUs** — enjoy lightning-fast math with a smooth GPU-accelerated interface.
