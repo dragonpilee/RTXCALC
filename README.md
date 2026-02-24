@@ -71,15 +71,28 @@ conda activate calculator
 pip install pyqt5
 ```
 
----
-
-## 🚀 Quick Start
-
-Launch RTXCALC from your terminal:
-
 ```powershell
 python calcu.py
 ```
+
+---
+
+## 🐳 Dockerized Execution
+
+RTXCALC is now fully dockerized with NVIDIA GPU and GUI support.
+
+### 1. Prerequisites
+- **NVIDIA Container Toolkit** installed on host.
+- **X11 Server** (e.g., [VcXsrv](https://sourceforge.net/projects/vcxsrv/)) if running on Windows.
+
+### 2. Launching
+From the project root, simply run:
+
+```powershell
+docker compose up
+```
+
+The container will automatically link your GPU and attempt to display the GUI on `host.docker.internal:0.0`.
 
 ---
 
